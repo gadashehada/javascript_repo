@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+
+		var count,pass,faild,intInput,percentagePass,percentageFaild;
+		count=pass=faild=intInput=percentagePass=percentageFaild=0;
+        
+        intInput = parseInt(window.prompt("Enter\n1-pass\n2-faild\n-1-exit","1"));
+
+        while(intInput !=-1){
+
+        	if (intInput==1) {
+        		pass++;
+        	}else if (intInput==2) {
+        		faild++;
+        	}
+        	count++;
+        	intInput = parseInt(window.prompt("Enter\n1-pass\n2-faild\n-1-exit","1"));
+        }
+        percentagePass=pass/count*100;
+        percentageFaild=faild/count*100;
+
+         document.write("<table width=50% border=\"1\" style=\"font-size:24pt;\"><thead><tr><th colspan =\"3\">There are</th></tr>"+
+        	"<tr><th></th><th>pass</th><th>faild</th></tr></thead>"+
+        	"<tbody><tr><td>#</td><td>"+pass+"</td><td>"+faild+"</td></tr>"+
+        	"<tr><td>%</td><td style=\"color:lightgreen;background-color:green;\">"+percentagePass+"</td><td style=\"color:#ffffff;background-color:red;\">"+percentageFaild+"</td></tr></tbody></table>");
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
