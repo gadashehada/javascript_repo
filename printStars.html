@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+		for(var m=0; m<10; m++){
+		    for( var n=9;n>=0  ;  n--){
+		        if(m == n){
+		           document.write("<span style='color:red'>@</span>");
+		           break;
+		        }
+		        document.write("* ");
+		    }
+		   document.write("<br>");
+		}
+		document.write("<br><br><hr><br>");
+
+
+
+
+
+		/* star two*/ /* *******@******* */
+
+		for(var m=0; m<10; m++){
+		    for( var n=9;n>=0  ;  n--){
+		        if(m == n){
+		           document.write("<span style='color:red'>@</span>");
+		           for (var i=0; i <n; i++) {
+		           	document.write("* ");
+		           }
+		           break;
+		        }
+		        document.write("* ");
+		    }
+
+
+
+		   document.write("<br>");
+		}
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
